@@ -10,7 +10,7 @@ body {
     color: #e9e2e2;
 }
 
-/* Encabezado */
+/* header */
 #header {
     color: white;
     display: flex;
@@ -41,7 +41,8 @@ body {
     color: #90aad3;
 }
 
-/* Sección Bienvenida */
+/* main*/
+/* bienvenida */
 .bienvenida {
     text-align: center;
     padding: 50px 20px;
@@ -80,7 +81,7 @@ body {
     background-color: #81abc0;
 }
 
-/* Sección Catálogo */
+/* catalogo */
 .catalogo {
     padding: 50px 20px;
     text-align: center;
@@ -143,7 +144,7 @@ body {
     background-color: #494a4a;
 }
 
-/* Sección Sobre Nosotros */
+/* nosotros */
 .sobre-nosotros {
     padding: 150px;
     background-color: #000000;
@@ -171,7 +172,7 @@ body {
     color: #f0f0f0;
 }
 
-/* Sección Contacto */
+/*contacto */
 .contacto {
     padding: 120px;
     background-color: #555555;
@@ -202,7 +203,7 @@ body {
     color: #90aad3;
 }
 
-/* Pie de página */
+/* footer*/
 footer {
     background-color: #111;
     text-align: center;
