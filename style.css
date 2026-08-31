@@ -1,66 +1,65 @@
-/* -------------------------
-   CONFIGURACIÓN GENERAL
-------------------------- */
-
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: #817e7e;
+    color: #e9e2e2;
 }
 
-
-/* -------------------------
-   ENCABEZADO
-------------------------- */
-
-header {
-    background-color: #111;
+/* Encabezado */
+#header {
     color: white;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px 60px;
+    padding: 10px 20px;
+    background-color: #555;
 }
 
-header h1 {
-    font-size: 24px;
-    letter-spacing: 3px;
+#navbar {
+    background: #000;
+    padding: 15px 40px;
 }
 
-nav a {
+#navbar .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#navbar a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
 }
 
-nav a:hover {
-    color: #c9a227;
+#navbar a:hover {
+    color: #90aad3;
 }
 
-
-/* -------------------------
-   BIENVENIDA
-------------------------- */
-
+/* Sección Bienvenida */
 .bienvenida {
     text-align: center;
+    padding: 50px 20px;
+}
 
-    background-color: white;
+.bienvenida .imagen1 {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
 
-    padding: 100px 20px;
+.bienvenida h1{
+    font-size: 45px;
 }
 
 .bienvenida h2 {
-    font-size: 45px;
-    margin-bottom: 15px;
+    font-size: 35px;
+    margin: 15px 0;
 }
 
 .bienvenida p {
@@ -70,32 +69,25 @@ nav a:hover {
 
 .boton {
     display: inline-block;
-
     background-color: #111;
     color: white;
-
     text-decoration: none;
-
     padding: 12px 25px;
     border-radius: 5px;
 }
 
 .boton:hover {
-    background-color: #c9a227;
+    background-color: #81abc0;
 }
 
-
-/* -------------------------
-   CATÁLOGO
-------------------------- */
-
+/* Sección Catálogo */
 .catalogo {
-    padding: 70px 50px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .catalogo h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
 
@@ -106,52 +98,21 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-
-/* -------------------------
-   TARJETAS DE RELOJES
-------------------------- */
-
 .reloj {
-    background-color: white;
-
+    background-color: rgb(99, 144, 176);
     width: 280px;
-
     padding: 25px;
-
     border-radius: 10px;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-
-    transition: transform 0.2s;
 }
-
-.reloj:hover {
-    transform: translateY(-5px);
-}
-
-
-/* Imagen */
 
 .imagen-reloj {
-    height: 180px;
-
-    background-color: #eeeeee;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
-
     margin-bottom: 20px;
 }
-
-.imagen-reloj span {
-    font-size: 80px;
-}
-
-
-/* Información */
 
 .reloj h3 {
     font-size: 22px;
@@ -159,111 +120,92 @@ nav a:hover {
 }
 
 .reloj p {
-    color: #666;
+    color: #f0f0f0;
     margin-bottom: 15px;
 }
 
 .reloj strong {
     display: block;
-
     font-size: 20px;
-
     margin-bottom: 20px;
 }
 
-
-/* Botón */
-
 .reloj button {
     border: none;
-
     background-color: #111;
     color: white;
-
     padding: 10px 25px;
-
     border-radius: 5px;
-
     cursor: pointer;
 }
 
 .reloj button:hover {
-    background-color: #c9a227;
+    background-color: #494a4a;
 }
 
-
-/* -------------------------
-   SOBRE NOSOTROS
-------------------------- */
-
-.nosotros {
-    background-color: white;
-
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 150px;
+    background-color: #000000;
     text-align: center;
-
-    padding: 70px 20px;
+    margin-top: 40px;
 }
 
-.nosotros h2 {
+.sobre-nosotros h2 {
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
+.contenido-nosotros {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-/* -------------------------
-   CONTACTO
-------------------------- */
+.contenido-nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
 
+/* Sección Contacto */
 .contacto {
+    padding: 120px;
+    background-color: #555555;
     text-align: center;
-
-    padding: 70px 20px;
 }
 
 .contacto h2 {
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
-.contacto p {
-    margin: 8px;
+.contenido-contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.contenido-contacto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
 
-/* -------------------------
-   FOOTER
-------------------------- */
+.info-contacto strong {
+    color: #90aad3;
+}
 
+/* Pie de página */
 footer {
     background-color: #111;
-    color: white;
-
     text-align: center;
-
-    padding: 20px;
-}
-
-
-/* -------------------------
-   DISEÑO PARA CELULAR
-------------------------- */
-
-@media (max-width: 700px) {
-
-    header {
-        flex-direction: column;
-        gap: 20px;
-
-        padding: 20px;
-    }
-
-    nav a {
-        margin: 0 8px;
-    }
-
-    .bienvenida h2 {
-        font-size: 35px;
-    }
-
-    .catalogo {
-        padding: 50px 20px;
-    }
+    padding: 50px;
+    margin-top: 40px;
 }

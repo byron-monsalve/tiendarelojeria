@@ -3,103 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeWatch - Relojes</title>
-
-    <!-- Conexión con el archivo CSS -->
+    <title>Relojería</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Encabezado -->
     <header>
-        <h1>TIMEWATCH</h1>
+        <div id="header">
+            <div class="contact">
+                <span>+569 87654321</span>
+                <span>Relojeria@duoc.cl</span>
+            </div>
+            <div class="location">
+                <span>San Bernardo, Santiago Chile</span>
+            </div>
+        </div>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#relojes">Relojes</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
+        <nav id="navbar">
+            <div class="links">
+                <a href="#inicio">Inicio</a>
+                <a href="#relojes">Relojes</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
         </nav>
     </header>
-
-    <!-- Sección principal -->
+    
     <main>
-
         <section id="inicio" class="bienvenida">
+            <h1>Relojeria Vera</h1>
+            <img class="imagen1" src="image/all-watches-428x428.avif" alt="Imagen reloj principal">
             <h2>Encuentra tu estilo</h2>
             <p>Descubre nuestra colección de relojes elegantes y modernos.</p>
             <a href="#relojes" class="boton">Ver relojes</a>
         </section>
 
-        <!-- Catálogo -->
         <section id="relojes" class="catalogo">
             <h2>Nuestros relojes</h2>
-
             <div class="productos">
-
                 <article class="reloj">
-                    <div class="imagen-reloj">
-                        <span>⌚</span>
-                    </div>
-
+                    <img class="imagen-reloj" src="image/image.png" alt="Reloj Classic Black">
                     <h3>Classic Black</h3>
-                    <p>Reloj clásico de correa negra.</p>
-                    <strong>$49.990</strong>
-
+                    <p>Reloj casio clásico resistente al agua.</p>
+                    <strong>$19.990</strong>
                     <button>Comprar</button>
                 </article>
 
                 <article class="reloj">
-                    <div class="imagen-reloj">
-                        <span>⌚</span>
-                    </div>
-
+                    <img class="imagen-reloj" src="image/ico-428x428-ok-core.avif" alt="Reloj Silver Time">
                     <h3>Silver Time</h3>
                     <p>Diseño elegante con acabado plateado.</p>
                     <strong>$59.990</strong>
-
                     <button>Comprar</button>
                 </article>
 
                 <article class="reloj">
-                    <div class="imagen-reloj">
-                        <span>⌚</span>
-                    </div>
-
+                    <img class="imagen-reloj" src="image/mtp-b145dc-2a2v.avif" alt="Reloj Modern Gold">
                     <h3>Modern Gold</h3>
                     <p>Reloj moderno con detalles dorados.</p>
                     <strong>$69.990</strong>
-
                     <button>Comprar</button>
                 </article>
-
             </div>
         </section>
 
-        <!-- Nosotros -->
-        <section id="nosotros" class="nosotros">
-            <h2>Sobre nosotros</h2>
-
-            <p>
-                En TimeWatch nos dedicamos a ofrecer relojes
-                modernos y elegantes para cada ocasión.
-            </p>
+        <section id="nosotros" class="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="contenido-nosotros">
+                <p>Somos una relojería apasionada por la elegancia, la precisión y la puntualidad.</p>
+                <p>Ubicados en San Bernardo, trabajamos para ofrecerte la mejor calidad.</p>
+            </div>
         </section>
 
-        <!-- Contacto -->
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
-
-            <p>Email: contacto@timewatch.cl</p>
-            <p>Teléfono: +56 9 1234 5678</p>
+            <div class="contenido-contacto">
+                <p>¿Tienes dudas o buscas un modelo en específico? Estamos aquí para ayudarte.</p>
+                <div class="info-contacto">
+                    <p><strong>Teléfono:</strong> +569 87654321</p>
+                    <p><strong>Correo:</strong> Relojeria@duoc.cl</p>
+                    <p><strong>Ubicación:</strong> San Bernardo, Santiago Chile</p>
+                </div>
+            </div>
         </section>
-
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 TimeWatch - Todos los derechos reservados.</p>
+        <p>Todos los derechos reservados.</p>
     </footer>
 
 </body>
